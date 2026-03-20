@@ -1,0 +1,54 @@
+  /* ROOT VARIABLES */
+  :root {
+    --font-primary: 'Roboto', 'Raleway', Arial, sans-serif;
+    --dark-primary: #060606;
+    --light-primary: #FFFBFD;
+    --light-secondary: #edf6f9;
+    --blue-primary: #0077b6;
+    --navbar-primary: #2E80C2;
+    --border-radius: 25px;
+    --font-weight-primary: 800;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: var(--font-primary) !important;
+  }
+
+  body {
+    background: var(--light-secondary);
+    overflow-x: hidden;
+  }
+
+  .text-primary {
+    color: var(--blue-primary) !important;
+  }
+
+  .btn-success {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    border: none;
+  }
+
+  .btn-success i {
+    padding-right: 8px;
+  }
+
+  .visually-hidden-focusable {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .visually-hidden-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 1rem;
+  }
