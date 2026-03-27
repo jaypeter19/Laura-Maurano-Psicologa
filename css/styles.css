@@ -17,6 +17,8 @@
     font-family: var(--font-primary) !important;
   }
 
+  /* GENERAL CSS */
+
   body {
     background: var(--light-secondary);
     overflow-x: hidden;
@@ -51,4 +53,227 @@
     width: auto;
     height: auto;
     margin: 1rem;
+  }
+
+  /* NAVBAR  */
+
+  .navbar {
+    background-color: var(--navbar-primary);
+  }
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: var(--font-weight-primary);
+    color: var(--light-primary) !important;
+    text-transform: capitalize;
+  }
+
+  .nav-link,
+  .nav-link-icon {
+    font-size: 1rem;
+    font-weight: var(--font-weight-primary);
+    color: var(--light-primary);
+  }
+
+  .navbar .nav-link::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 3px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(227, 230, 222);
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar .nav-link:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .nav-link-icon i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .navbar .nav-link-icon::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 3px;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(227, 230, 222);
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar .nav-link-icon:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
+
+
+  .navbar .nav-link:hover {
+    color: var(--light-primary);
+  }
+
+  /* HERO SECTION */
+
+  .hero-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text h1,
+  h2 {
+    font-size: 3rem;
+    font-weight: var(--font-weight-primary);
+    color: var(--blue-primary);
+  }
+
+  .hero-text .muted {
+    font-size: 1.5rem;
+    color: var(--light-primary);
+  }
+
+  .hero-image img {
+    object-fit: cover;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+  }
+
+  /* SERVICES SECTION */
+
+  .service-section {
+    position: relative;
+    background-image: url('../assets/services01.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+  }
+
+  .service-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #FFFBFDbf;
+    z-index: 1;
+  }
+
+  /* Garante que o conteúdo fique acima do overlay */
+  .service-section>* {
+    position: relative;
+    z-index: 2;
+  }
+
+  .service-section h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: var(--font-weight-primary);
+    color: var(--dark-primary) !important;
+  }
+
+  .service-section h4 {
+    margin: 15px 0px;
+    font-size: 1.5rem;
+    color: var(--blue-primary) !important;
+  }
+
+
+
+  /* THERAPY SECTION */
+
+  .therapy-section h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: var(--font-weight-primary);
+    color: var(--dark-primary) !important;
+  }
+
+  .therapy-section .therapy-photo img {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+
+  /* BENEFITS SECTION */
+
+  .benefits-section h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: var(--font-weight-primary);
+    color: var(--dark-primary) !important;
+  }
+
+
+  /* ABOUT SECTION */
+
+  .about-section h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: var(--font-weight-primary);
+    color: var(--dark-primary) !important;
+  }
+
+  .about-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .about-section .about-photo {
+    width: 30%;
+  }
+
+  .about-section .about-photo .laura-photo {
+    border-radius: var(--border-radius);
+    width: 100%;
+    min-height: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    object-fit: cover;
+  }
+
+
+
+  /* FOOTER STYLES */
+
+  footer .footer {
+    background-color: var(--blue-primary);
+    color: var(--light-secondary);
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+  /* MODAL CSS */
+
+  .modal-header .btn-close {
+    padding-right: 30px;
+  }
+
+  .modal-body label {
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  .modal-footer .btn-primary {
+    background-color: var(--bg-a-color);
+    border: none;
+    color: #fff;
+    transition: all ease-in;
+  }
+
+  .modal-footer .btn-primary:hover {
+    opacity: 0.8;
   }
