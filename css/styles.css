@@ -61,11 +61,21 @@
     background-color: var(--navbar-primary);
   }
 
+  .navbar-brand img {
+    width: 200px;
+    height: auto;
+  }
+
+  .navbar-nav {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .nav-link {
     font-size: 18px;
     font-weight: var(--font-weight-primary);
     color: var(--light-primary) !important;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   .nav-link,
@@ -144,6 +154,7 @@
 
   .hero-image img {
     object-fit: cover;
+    object-position: 50% 30%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 450px;
     height: 450px;
@@ -203,6 +214,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     object-fit: cover;
     border-radius: var(--border-radius);
+    max-width: 80%;
   }
 
   /* BENEFITS SECTION */
@@ -333,7 +345,7 @@
       height: 250px;
     }
 
-    .service-section h4{
+    .service-section h4 {
       font-size: 1rem;
     }
 
@@ -342,12 +354,12 @@
     }
 
     .service-section p {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
 
     .therapy-section {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
 
     .therapy-section h3 {
@@ -386,7 +398,6 @@
     }
 
     .hero-text h1 {
-      margin-top: 3rem;
       font-size: 1.5rem;
     }
 
@@ -414,7 +425,7 @@
 
 
     .about-section .about-photo {
-      margin-top: 2rem;
+      margin: 2rem auto;
       width: 80%;
     }
 
@@ -430,6 +441,11 @@
     .hero-text h1 {
       font-size: 1.5rem;
     }
+
+    .service-section h4 {
+      font-size: 1.5rem;
+    }
+
 
 
   }
