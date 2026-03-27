@@ -265,12 +265,9 @@
 
 
   @media only screen and (max-width: 1200px) {
-    .navbar {
-      width: 80%;
-    }
 
     .hero-section {
-      min-height: 50vh;
+      min-height: 40vh;
     }
 
     .hero-image img {
@@ -317,12 +314,10 @@
 
 
   @media only screen and (max-width: 768px) {
-    .navbar {
-      width: 85%;
-    }
+
 
     .hero-section {
-      min-height: 50vh;
+      min-height: 40vh;
     }
 
     .hero-section::before {
@@ -338,8 +333,16 @@
       height: 250px;
     }
 
+    .service-section h4{
+      font-size: 1rem;
+    }
+
     .service-section h3 {
       font-size: 1.5rem;
+    }
+
+    .service-section p {
+      font-size: 1rem;
     }
 
     .therapy-section {
@@ -378,12 +381,8 @@
 
   @media only screen and (max-width: 576px) {
 
-    .navbar {
-      width: 80%;
-    }
-
     .hero-section {
-      min-height: 70vh;
+      min-height: 60vh;
     }
 
     .hero-text h1 {
@@ -424,12 +423,8 @@
 
   @media only screen and (max-width: 420px) {
 
-    .navbar {
-      width: 100%;
-    }
-
     .hero-section {
-      min-height: 70vh;
+      min-height: 60vh;
     }
 
     .hero-text h1 {
@@ -442,7 +437,7 @@
   @media only screen and (max-width: 375px) {
 
     .hero-section {
-      min-height: 50vh;
+      min-height: 40vh;
     }
 
     .hero-text h1 {
