@@ -154,7 +154,7 @@
 
   .hero-image img {
     object-fit: cover;
-    object-position: 50% 30%;
+    object-position: 50% 75%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 450px;
     height: 450px;
@@ -248,7 +248,7 @@
   }
 
   .about-section .about-photo {
-    width: 30%;
+    width: 40%;
   }
 
   .about-section .about-photo .laura-photo {
@@ -322,6 +322,10 @@
       font-size: 1.5rem;
     }
 
+    .therapy-section .therapy-photo img {
+      max-width: 100%;
+    }
+
   }
 
 
@@ -369,7 +373,6 @@
     .therapy-section p {
       font-size: 1rem;
     }
-
 
     .benefits-section h3 {
       font-size: 1.5rem;
